@@ -1,0 +1,174 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+/* biome-ignore lint: Tailwind v4 custom at-rule */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-inter);
+  /* Project color tokens */
+  --color-avatar: rgb(250 250 250);
+  --color-cta: rgb(9 9 11);
+  --color-ellipse-1: rgb(251 146 60 / 0.6000000238418579);
+  --color-ellipse-2: rgb(253 186 116);
+  --color-ellipse-30: rgb(253 186 116);
+  --color-ellipse-34: rgb(9 9 11);
+  --color-ellipse-35: rgb(9 9 11);
+  --color-ellipse-36: rgb(9 9 11);
+  --color-footer: rgb(9 9 11);
+  --color-frame: rgb(250 250 250 / 0.10000000149011612);
+  --color-frame-3: rgb(255 255 255 / 0.10000000149011612);
+  --color-frame-708: rgb(253 186 116);
+  --color-glow: rgb(250 250 250 / 0.30000001192092896);
+  --color-logos: rgb(9 9 11);
+  --color-subtract: rgb(250 250 250);
+  --color-testimonials: rgb(9 9 11);
+  --color-tile: rgb(250 250 250 / 0.019999999552965164);
+  --color-vector: rgb(161 161 170);
+  --color-vector-3: rgb(250 250 250);
+  --color-accordionitem: rgb(255 255 255 / 0.10000000149011612);
+  --color-badge: rgb(255 255 255 / 0.20000000298023224);
+  --color-frame-1: rgb(255 255 255 / 0.10000000149011612);
+  --color-frame-10: rgb(250 250 250 / 0.30000001192092896);
+  --color-frame-11: rgb(250 250 250 / 0.4000000059604645);
+  --color-frame-12: rgb(250 250 250 / 0.4000000059604645);
+  --color-frame-13: rgb(250 250 250 / 0.5);
+  --color-frame-14: rgb(250 250 250 / 0.5);
+  --color-frame-16: rgb(9 9 11 / 0.20000000298023224);
+  --color-frame-17: rgb(9 9 11 / 0.20000000298023224);
+  --color-frame-18: rgb(9 9 11 / 0.20000000298023224);
+  --color-frame-19: rgb(9 9 11 / 0.20000000298023224);
+  --color-frame-22: rgb(9 9 11 / 0.20000000298023224);
+  --color-frame-4: rgb(250 250 250 / 0.05000000074505806);
+  --color-frame-5: rgb(250 250 250 / 0.05000000074505806);
+  --color-frame-6: rgb(250 250 250 / 0.10000000149011612);
+  --color-frame-7: rgb(250 250 250 / 0.10000000149011612);
+  --color-frame-713: rgb(255 255 255 / 0.10000000149011612);
+  --color-frame-8: rgb(250 250 250 / 0.20000000298023224);
+  --color-frame-9: rgb(250 250 250 / 0.30000001192092896);
+  --color-image: rgb(9 9 11);
+  --color-path: rgb(250 250 250);
+  --color-vector-1: rgb(255 255 255 / 0.10000000149011612);
+  --color-bento-grid-2x2: rgb(9 9 11);
+  --color-button-linear-gradient-1: rgb(250 250 250);
+  --color-button-linear-gradient-2: rgb(250 250 250);
+  --color-button-text: rgb(24 24 27);
+  --color-ellipse-33-linear-gradient-1: rgb(9 9 11);
+  --color-ellipse-33-linear-gradient-2: rgb(9 9 11);
+  --color-ellipse-33-linear-gradient-3: rgb(9 9 11);
+  --color-fade-linear-gradient-1: rgb(9 9 11);
+  --color-fade-linear-gradient-2: rgb(9 9 11);
+  --color-faq-default: rgb(9 9 11);
+  --color-feature-rising: rgb(9 9 11);
+  --color-frame-15-linear-gradient-1: rgb(251 146 60);
+  --color-frame-15-linear-gradient-2: rgb(251 146 60);
+  --color-frame-16-linear-gradient-1: rgb(255 255 255);
+  --color-frame-16-linear-gradient-2: rgb(250 250 250);
+  --color-frame-17-linear-gradient-1: rgb(255 255 255);
+  --color-frame-17-linear-gradient-2: rgb(250 250 250);
+  --color-frame-18-linear-gradient-1: rgb(255 255 255);
+  --color-frame-18-linear-gradient-2: rgb(250 250 250);
+  --color-frame-19-linear-gradient-1: rgb(255 255 255);
+  --color-frame-19-linear-gradient-2: rgb(250 250 250);
+  --color-frame-20-linear-gradient-1: rgb(9 9 11);
+  --color-frame-20-linear-gradient-2: rgb(9 9 11);
+  --color-frame-21-linear-gradient-1: rgb(9 9 11);
+  --color-frame-21-linear-gradient-2: rgb(9 9 11);
+  --color-frame-22-linear-gradient-1: rgb(255 255 255);
+  --color-frame-22-linear-gradient-2: rgb(250 250 250);
+  --color-frame-23-linear-gradient-1: rgb(9 9 11);
+  --color-frame-23-linear-gradient-2: rgb(9 9 11);
+  --color-frame-24-linear-gradient-1: rgb(9 9 11);
+  --color-frame-24-linear-gradient-2: rgb(9 9 11);
+  --color-frame-25-linear-gradient-1: rgb(9 9 11);
+  --color-frame-25-linear-gradient-2: rgb(9 9 11);
+  --color-frame-26-linear-gradient-1: rgb(250 250 250);
+  --color-frame-26-linear-gradient-2: rgb(250 250 250);
+  --color-frame-27-linear-gradient-1: rgb(250 250 250);
+  --color-frame-27-linear-gradient-2: rgb(250 250 250);
+  --color-frame-28-linear-gradient-1: rgb(250 250 250);
+  --color-frame-28-linear-gradient-2: rgb(250 250 250);
+  --color-frame-713-linear-gradient-1: rgb(250 250 250);
+  --color-frame-713-linear-gradient-2: rgb(250 250 250);
+  --color-globe-linear-gradient-1: rgb(253 186 116);
+  --color-globe-linear-gradient-2: rgb(251 146 60);
+  --color-hero-default: rgb(9 9 11);
+  --color-items-default: rgb(9 9 11);
+  --color-launch-ui-text: rgb(250 250 250);
+  --color-launch-ui-dark-mode-desktop: rgb(9 9 11);
+  --color-navbar-default: rgb(9 9 11);
+  --color-pricing-default: rgb(9 9 11);
+  --color-tab-linear-gradient-1: rgb(250 250 250);
+  --color-tab-linear-gradient-2: rgb(250 250 250);
+  --color-tabs-default: rgb(9 9 11);
+  --color-testimonial-linear-gradient-1: rgb(250 250 250 / 0.20000000298023224);
+  --color-testimonial-linear-gradient-2: rgb(250 250 250 / 0.20000000298023224);
+  --color-username-text: rgb(161 161 170);
+  --color-c-2024-mikolaj-dobrucki-all-rights-reserved-text: rgb(161 161 170);
+  --color-text: rgb(161 161 170);
+  --color-0-text: rgb(250 250 250);
+  --color-1831-text: rgb(161 161 170);
+  --color-accordion-item-label-text: rgb(250 250 250);
+  --color-badge-text: rgb(161 161 170);
+  --color-build-a-better-website-faster-text: rgb(250 250 250);
+  --color-build-your-dream-landing-page-today-text: rgb(250 250 250);
+  --color-built-with-the-best-tools-text: rgb(250 250 250);
+  --color-card-description-text: rgb(161 161 170);
+  --color-card-title-text: rgb(250 250 250);
+  --color-changelog-text: rgb(161 161 170);
+  --color-documentation-text: rgb(161 161 170);
+  --color-done-text: rgb(161 161 170);
+  --color-erik-d-text: rgb(24 24 27);
+  --color-everything-you-need-nothing-you-don-t-text: rgb(250 250 250);
+  --color-free-and-open-source-forever-text: rgb(161 161 170);
+  --color-get-lifetime-access-to-all-the-components-no-recurring-fees-just-simple-transparent-pricing-text: rgb(161 161 170);
+  --color-give-your-big-idea-the-website-it-deserves-text-linear-gradient-1: rgb(250 250 250);
+  --color-give-your-big-idea-the-website-it-deserves-text-linear-gradient-2: rgb(161 161 170);
+  --color-here-s-what-people-are-saying-about-launch-ui-text: rgb(161 161 170);
+  --color-item-description-text: rgb(161 161 170);
+  --color-item-title-text: rgb(250 250 250);
+  --color-landing-page-kit-template-with-react-shadcn-ui-and-tailwind-that-you-can-copy-paste-into-your-project-text: rgb(161 161 170);
+  --color-launch-ui-makes-it-easy-to-build-an-unforgetable-website-that-resonates-with-professional-design-centric-audiences-text: rgb(161 161 170);
+  --color-let-me-quickly-jump-into-sanity-and-fix-it-text: rgb(161 161 170);
+  --color-link-text: rgb(250 250 250);
+  --color-list-item-text: rgb(250 250 250);
+  --color-loved-by-designers-and-developers-across-the-planet-text: rgb(250 250 250);
+  --color-make-the-right-impression-text-linear-gradient-1: rgb(250 250 250);
+  --color-make-the-right-impression-text-linear-gradient-2: rgb(161 161 170);
+  --color-menuitem-text: rgb(250 250 250);
+  --color-name-surname-text: rgb(250 250 250);
+  --color-one-time-payment-text: rgb(250 250 250);
+  --color-plan-description-text: rgb(161 161 170);
+  --color-plan-name-text: rgb(250 250 250);
+  --color-plus-local-taxes-text: rgb(161 161 170);
+  --color-privacy-policy-text: rgb(161 161 170);
+  --color-product-text: rgb(250 250 250);
+  --color-quality-you-can-trust-and-build-on-text-linear-gradient-1: rgb(250 250 250);
+  --color-quality-you-can-trust-and-build-on-text-linear-gradient-2: rgb(161 161 170);
+  --color-questions-and-answers-text: rgb(250 250 250);
+  --color-reactjs-text: rgb(250 250 250);
+  --color-sofia-g-text: rgb(250 250 250);
+  --color-start-building-text: rgb(250 250 250);
+  --color-tab-description-text: rgb(161 161 170);
+  --color-tab-title-text: rgb(161 161 170);
+  --color-terms-of-service-text: rgb(161 161 170);
+  --color-we-need-to-update-this-heading-before-launch-text: rgb(161 161 170);
+  --color-you-can-trust-that-all-of-the-designs-are-taking-the-full-advantage-of-newest-figma-s-features-and-that-code-is-written-following-best-practices-out-there-text: rgb(161 161 170);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), Arial, Helvetica, sans-serif;
+}
