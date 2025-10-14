@@ -1,18 +1,38 @@
+"use client";
+
+import { motion } from "framer-motion";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <div className="font-sans min-h-screen p-6 sm:p-10 mt-10">
       <main className="row-start-2 mx-auto w-full max-w-[1312px]">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl text-foreground font-semibold tracking-tight mb-12">
+        <motion.h1
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ margin: "-100px" }}
+          transition={{
+            duration: 1,
+            ease: [0.25, 0.46, 0.45, 0.94],
+          }}
+          className="text-3xl sm:text-4xl md:text-5xl text-foreground font-semibold mb-12"
+        >
           Build a better website, faster.
-        </h1>
+        </motion.h1>
 
         <section
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-24 gap-4 md:gap-4 lg:gap-5"
           aria-label="Feature cards"
         >
-          <article
+          <motion.article
+            initial={{ opacity: 0, y: 60 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ margin: "-50px" }}
+            transition={{
+              duration: 0.8,
+              ease: [0.25, 0.46, 0.45, 0.94],
+              delay: 0.1,
+            }}
             style={{ paddingBottom: "0 !important" }}
             className="flex flex-col rounded-[12px] overflow-hidden bg-background p-6 md:p-7 lg:p-8 border border-solid border-border-muted sm:border-foreground lg:border-border-muted col-span-1 lg:col-span-11 relative"
           >
@@ -48,9 +68,17 @@ export default function Home() {
                 className="block lg:hidden mx-auto w-full h-auto scale-140 sm:scale-110 mt-4 sm:mt-0"
               />
             </div>
-          </article>
+          </motion.article>
 
-          <article
+          <motion.article
+            initial={{ opacity: 0, y: 60 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ margin: "-50px" }}
+            transition={{
+              duration: 0.8,
+              ease: [0.25, 0.46, 0.45, 0.94],
+              delay: 0.2,
+            }}
             className="flex flex-col rounded-[12px] overflow-hidden border border-border-muted-darker bg-tile p-6 md:p-7 lg:p-8 col-span-1 lg:col-span-13 relative"
             style={{ paddingBottom: "0 !important" }}
           >
@@ -79,9 +107,17 @@ export default function Home() {
                 className="mx-auto w-full sm:w-auto h-auto mt-4 sm:mt-0"
               />
             </div>
-          </article>
+          </motion.article>
 
-          <article
+          <motion.article
+            initial={{ opacity: 0, y: 60 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ margin: "-50px" }}
+            transition={{
+              duration: 0.8,
+              ease: [0.25, 0.46, 0.45, 0.94],
+              delay: 0.3,
+            }}
             className="rounded-[12px] col-span-1 lg:col-span-13 relative"
             style={{
               padding: "0.8px",
@@ -116,9 +152,17 @@ export default function Home() {
                 />
               </div>
             </div>
-          </article>
+          </motion.article>
 
-          <article
+          <motion.article
+            initial={{ opacity: 0, y: 60 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ margin: "-50px" }}
+            transition={{
+              duration: 0.8,
+              ease: [0.25, 0.46, 0.45, 0.94],
+              delay: 0.4,
+            }}
             className="rounded-[12px] col-span-1 lg:col-span-11"
             style={{
               padding: "0.8px",
@@ -153,7 +197,7 @@ export default function Home() {
                 />
               </div>
             </div>
-          </article>
+          </motion.article>
         </section>
       </main>
     </div>
