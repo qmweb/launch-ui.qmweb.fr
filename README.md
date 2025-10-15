@@ -33,6 +33,7 @@ Avec plus de temps, les améliorations suivantes pourraient être implémentées
 - **Internationalisation** : Support multi-langues avec next-intl pour une audience internationale
 - **Analytics et monitoring** : Intégration Umami/Google Analytics pour le suivi des performances
 - **Pipeline CI/CD** : Automatisation du déploiement avec GitHub Actions pour un workflow robuste
+- **Ajout des pages robot.ts, sitemap.ts, not-found.tsx et error.tsx** : Pages spéciales Next.js pour le SEO et la gestion d'erreurs
 
 ## 🛠️ Installation & Développement
 
