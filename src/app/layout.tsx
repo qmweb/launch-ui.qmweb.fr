@@ -8,8 +8,16 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-	title: "Launch UI | BeeAgency",
-	description: "Launch UI | BeeAgency",
+	title: "Launch UI | BeeeAgency",
+	description: "Launch UI | BeeeAgency",
+	robots: {
+		index: false,
+		follow: false,
+		googleBot: {
+			index: false,
+			follow: false,
+		},
+	},
 }
 
 export default function RootLayout({
